@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+	  Assignment 2
+	</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+  <div class='header'>
+    <img src='image1.jpg' />
+	<h1>Hot Air Balloon Riding Festival<h1>
+  </div>	
+  <div class="duration">
+    <h2>From 28th February 2017 onwards for 5 days</h2>
+  </div>
+  <form>
+    <input type='text' pattern="^[A-Za-z\s]{1,}[\.]{0,1}[A-Za-z\s]{0,}$" title="Please enter alphabets only" placeholder="Name" required /><br>
+	<input type='number' min='18' placeholder='Age' required /><br>
+	<input type='email' placeholder="Email" required /><br>
+	<input list="city" placeholder='City' required /><br>
+    <datalist id="city">
+      <option value="Bangalore">
+      <option value="Rajkot">
+      <option value="Vijag">
+    </datalist>
+	<input type='Submit' />
+  </form>
+  </body>
+</html>

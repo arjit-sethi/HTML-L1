@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 4</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<h1>Board of Control for Cricket in India</h1>
+<h3>Batting statistics of the Indian team for a T20 cricket match</h3>
+<canvas id="stats" width="600" height="500" style="border:1px solid black;"></canvas>
+<script>
+		var chart = document.getElementById("stats");
+		var pointer = chart.getContext("2d");
+		pointer.font = "20px Arial";
+		pointer.lineWidth = 2;
+		pointer.strokeText("Runs ^",70,40);
+		pointer.strokeText("140 -",10,40);
+		pointer.strokeText("220 -",10,90);
+		pointer.strokeText("100 -",10,140);
+		pointer.strokeText("80  -",10,190);
+		pointer.strokeText("60  -",10,240);
+		pointer.strokeText("40  -",10,290);
+		pointer.strokeText("20  -",10,340);
+		pointer.strokeText("0    -",10,390);
+		pointer.moveTo(60,410);
+		pointer.lineTo(60,20);
+		pointer.moveTo(30,390);
+		pointer.lineTo(500,390);
+		pointer.stroke();
+		pointer.strokeText("|",130,400);
+		pointer.strokeText("5",130,425);
+		pointer.strokeText("|",230,400);
+		pointer.strokeText("10",230,425);
+		pointer.strokeText("|",330,400);
+		pointer.strokeText("15",320,425);
+		pointer.strokeText("Overs ->",435,425);
+		pointer.moveTo(130, 290);
+		pointer.lineTo(230, 215);
+		pointer.moveTo(230, 215);
+		pointer.lineTo(330, 40);
+		pointer.stroke();
+</script>
+</body>
+</html>

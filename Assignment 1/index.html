@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+	  Assignment 1
+	</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script>
+	  function myValidator(name, qty) {
+	    name = name.toUpperCase();
+		if(name == 'WIPRO' || name == 'INFY' || name == 'TCS' || name == 'TECHM') {
+		  if(qty >= 10 && qty <= 100 && qty%10 == 0) {
+		    alert('Shares Purchased!!!');
+		  } else {
+		    alert('Quantity should be between 10 amd 100 and should be a multiple of 10.... Please try again')
+		  }
+		} else {
+		  alert ('Wrong Ticker Name!!! Please try Again');
+		}
+	  }
+	</script>
+  </head>
+  <body>
+    <table>
+	  <tr>
+	    <th>TICKER</th>
+		<th>PRICE</th>
+	  </tr>
+	  <tr>
+	    <td>Wipro</td>
+		<td>298.45</td>
+	  </tr>
+	  <tr>
+	    <td>Infy</td>
+		<td>949.95</td>
+	  </tr>
+	  <tr>
+	    <td>TCS</td>
+		<td>2713.70</td>
+	  </tr>
+	  <tr>
+	    <td>TechM</td>
+		<td>485.85</td>
+	  </tr>
+	</table><br>
+	<h1><strong>STOCK TRADING</strong></h1>
+	<table>
+	  <tr>
+	    <td>TICKER:</td>
+		<td><input type='text' placeholder="Enter Ticker Name" id='name'></td>
+	  </tr>
+	  <tr>
+	    <td>Quantity</td>
+		<td><input type='number' placeholder="Enter Quantity" id='qty'></td>
+	  </tr>
+	  <tr>
+	    <td><input type='submit' id='submit' onclick="myValidator(document.getElementById('name').value, document.getElementById('qty').value)"></td>
+	  </tr>
+	</table>
+  </body>
+</html>

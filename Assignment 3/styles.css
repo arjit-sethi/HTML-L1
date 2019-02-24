@@ -1,0 +1,13 @@
+body {
+	padding: 10px;
+}
+
+.section1 {
+	display: inline-flex;
+	width: 100%;
+}
+
+img {
+	width: 5%;
+	max-height: 80px;
+}

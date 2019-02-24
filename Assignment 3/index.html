@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+	  Assignment 3
+	</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script>
+      function play() { 
+        document.getElementById("video").play(); 
+      };
+
+      function pause() { 
+        document.getElementById("video").pause(); 
+      }; 	  
+    </script>
+  </head>
+  <body>
+    <div class='section1'>
+	  <img src='image.jpg' />
+	  <h1>Awesome Online Videos</h1>
+	</div>
+	<div class='section2'>
+	  <video width="400" id="video">
+        <source src="video.mp4" type="video/mp4">
+      </video><br>
+	  <button type="button" onclick="play()">Play</button>
+      <button type="button" onclick="pause()">Pause</button>
+	<div>
+  </body>
+</html>
